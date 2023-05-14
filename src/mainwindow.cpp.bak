@@ -83,7 +83,7 @@ void MainWindow::on_openAccountsButton_clicked()
 
             else
             {
-                gflessClient->openClient(displayName, token, gamePath, gameLang, autoLogin, auth->g_gsid);
+                gflessClient->openClient(displayName, token, gamePath, gameLang, autoLogin);
             }
 
         });

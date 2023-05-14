@@ -103,7 +103,7 @@ void SettingsDialog::setAutoLogin(bool login)
 
 void SettingsDialog::on_selectGamePathButton_clicked()
 {
-    QString path = QFileDialog::getOpenFileName(this, "Select aionclassic.bin", QDir::rootPath(), "aionclassic.bin (aionclassic.bin)");
+    QString path = QFileDialog::getOpenFileName(this, "Select NostaleClientX.exe", QDir::rootPath(), "NostaleClientX.exe (NostaleClientX.exe)");
 
     if (path.isEmpty())
         return;

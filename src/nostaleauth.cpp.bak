@@ -120,7 +120,6 @@ QString NostaleAuth::getToken(const QString &accountId)
     request.setRawHeader("tnt-installation-id", installationId.toUtf8());
 
     QString gsid = QUuid::createUuid().toString(QUuid::StringFormat::WithoutBraces) + "-" + QString::number(QRandomGenerator::global()->bounded(1000, 9999));
-	this->gsid = gsid;
     identity->update();
     EncryptedBlackBox blackbox(identity, accountId, gsid, installationId);
 

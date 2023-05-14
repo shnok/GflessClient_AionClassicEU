@@ -34,7 +34,6 @@ bool GflessClient::openClient(const QString& displayName, const QString& token, 
     process.setProcessEnvironment(env);
     process.setWorkingDirectory(directory);
     process.setProgram(gameClientPath);
-	
 	QStringList arguments;
     arguments << "-lang:FRA" << "-usehqserver" << "-hqip:79.110.83.156" << "-hqport:13001" << "-np:79.110.83.118" << "-dwsm" << "-loginex" << "-pwd16" << "-ingamewebshop" << "-npsa" << "-probability" << "-nospamcheck" << "-dnpshop" << "-dranking" << "-st" << "-dpetition" << "-recserveridx:1";
 	process.setArguments(arguments);

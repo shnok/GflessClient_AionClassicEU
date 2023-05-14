@@ -27,8 +27,6 @@ public:
     bool authenthicate(const QString& email, const QString& password, bool &captcha, QString &gfChallengeId, bool& wrongCredentials);
 
     QString getToken(const QString& accountId);
-	
-    QString gsid;	
 
 signals:
     void captchaStart();
