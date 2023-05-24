@@ -30,6 +30,8 @@ public:
 	
     QString gsid;	
 
+    QString g_gsid;
+
 signals:
     void captchaStart();
     void captchaEnd();
